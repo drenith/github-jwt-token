@@ -13,7 +13,15 @@ jobs:
       - uses: actions/github-script@v6
         with:
           script: |
+            const fs = require('fs')
+            
             const id_token = await core.getIDToken()
             //const id_token = await core.getIDToken(audience)
-            console.log(id_token.split(''))
+
+            fs.writeFileSync('jwt', id_token)
+
+      - uses: actions/artifact-upload@v3
+        with:
+          name: jwt
+          path: jwt
             
