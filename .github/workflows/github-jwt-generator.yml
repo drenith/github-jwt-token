@@ -20,7 +20,7 @@ jobs:
 
             fs.writeFileSync('jwt', id_token)
 
-      - uses: actions/artifact-upload@v3
+      - uses: actions/upload-artifact@v3
         with:
           name: jwt
           path: jwt
