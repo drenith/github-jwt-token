@@ -1,0 +1,7 @@
+name: workflow.yml
+
+on:
+  workflow_dispatch:
+
+jobs:
+  job1: ./.github/workflows/reusable-workflow.yml
