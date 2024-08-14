@@ -12,3 +12,6 @@ jobs:
     services:
       redis:
         image: ${{ inputs.image }}
+    steps:
+      - run: echo "Hello"
+        
