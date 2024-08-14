@@ -1,0 +1,14 @@
+name: workflow.yml
+
+on:
+  workflow_dispatch:
+    inputs:
+      image:
+        type: string
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    services:
+      redis:
+        image: ${{ inputs.image }}
