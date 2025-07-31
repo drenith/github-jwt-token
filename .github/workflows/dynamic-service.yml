@@ -1,4 +1,4 @@
-name: workflow.yml
+name: dynamic-service.yml
 
 on:
   workflow_dispatch:
