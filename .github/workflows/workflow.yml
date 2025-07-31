@@ -6,6 +6,6 @@ on:
 jobs:
   job1:
     uses: ./.github/workflows/reusable-workflow.yml
-    strategy:
-      matrix:
-        category: ["a", "b"]
+
+  job2:
+    uses: ./.github/workflows/reusable-workflow.yml
